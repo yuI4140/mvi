@@ -1,0 +1,41 @@
+.TH mvi 1 "October 2024" "v0.0.2" "User Commands"
+
+.SH NAME
+mvi \- mv Improve, move (rename) files
+
+.SH SYNOPSIS
+.B mvi
+[\-p | \-h | \-v | \-f] <file-path or expression> <destination-dir>
+
+.SH DESCRIPTION
+.B mvi
+moves files or directories to a specified destination. If the source file already exists in the destination directory, it will not be moved unless the \fB\-f\fR or \fB\-\-force\fR option is used.
+
+.SH BACKUP 
+When a file is moved, a backup is created after the move is completed, and this backup is automatically deleted.
+If the file is not found in the destination directory, the program will notify the user of the issue.
+
+.SH OPTIONS
+.TP
+.B \-h, \-\-help
+Display this help message.
+.TP
+.B \-v, \-\-version
+Show the version of the program.
+
+.TP
+.B \-f, \-\-force
+Force the move operation. Overwrites existing files in the destination directory.
+
+.TP
+.B \-p, \-\-pedantic
+Verbose mode.
+
+.TP
+.B \-\-no\-backup
+disable backup feature.
+
+.SH AUTHOR
+The program was written by Greyber Zambrano, also known as yuI4140.
+.SH SEE ALSO
+mv(1), cp(1), glob(7)
