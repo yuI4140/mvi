@@ -18,7 +18,7 @@
 bool is_force = false;
 bool is_pedantic = false;
 bool is_backup = true;
-#define VERSION "0.0.2"
+#define VERSION "0.0.4"
 #define NOB_FOREACH(array) for (size_t i = 0; i < array.count; ++i)
 #define N_THREAD 1
 typedef void*(*vFunc)(void*);
